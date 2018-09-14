@@ -3,9 +3,17 @@
 
 ssh-keygen -t rsa -C "675673035@qq.com"
 
-git config --global user.email "675673035@qq.com"
+<!-- 生成好之后默认是保存在 /c/Users/Administrator/.ssh/id_rsa.pub中，将里面生成好的key，在github网站中，点击setting -> SSH and GPGkey -> new SSH key -->
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ+U3fx9tpaNpwwM6mJwN4wpFiXQJcslz3b3eI/O/tM6QxwdMOJSG9uVyCzF3Fhsbn8I1Hskfu/MJ1LE977rf4Sm76uoxRGce5uvOOQiIpoBR73W86dQfgZuLMJipQAAODntC1CYMKiTN6osuYsLKfIR19HOMzi6R2Vrd0UTh1pKSyeAbdjLXu3gKgtQmI060nJCzTfG1PoyDoMM3FZXgibSUmyxz9WjTEG5vNfdgnkQdN+NpiH92PXlwCvnWnoVKwP+PZZROPvV3ksFeKKp8dexjsiGQY30ctRMY6RNc7qSTKjf+j/VH5VgQwr6Sh1db6ZYcxT92ot7YgX4nqcX2D 675673035@qq.com
 
+<!-- 在git bash中配置全局email，name，为了和github远端仓库做联系，我们将email和name配置成github账号的email和name -->
+git config --global user.email "675673035@qq.com"
 git config --global user.name "yangxiongsss"
 
+
+<!-- 首先我们尝试直接克隆远端仓库：
+在本地执行 git clone git@github.com:Erioser/1811-demo.git，然后再本地克隆下来的仓库进行开发，然后提交等操作
+这种方式是属于先建立仓库，再去开发。 -->
 git clone https://github.com/yangxiongsss/love-letter.git
+
 
